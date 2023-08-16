@@ -1,0 +1,44 @@
+<hello [employee]="employee"></hello>
+<div>
+  <p [style.color]="color">DIV place holder {{ hobbies }}</p>
+
+  <div>
+    <button (click)="setEmployeeName()">Change Name</button>
+    <button name="Task2" (click)="changeColor('red')">
+      Click for Color RED
+    </button>
+    <button name="Task3" (click)="displayHobby()">Click Display Hobby</button>
+
+    <p>
+      Task1: OnClick of the button the name should change to "new name" and id
+      to 22
+    </p>
+    <p>
+      Task2: OnClick of the button "Click for Color RED" : show the current name
+      as RED in the place holder div. Solution should be more generic and
+      customizable to adapt to custom colors.
+    </p>
+    <p>
+      Task3: Display the name of the Hobby for the current person as "Watching
+      Football" in the place holder div
+    </p>
+    <p>
+      Task4: Click on Task2 button and Task3 Button to display the correct
+      content
+    </p>
+    <p>Start editing to see some magic happen :)</p>
+
+    <div class="text-left">
+      Task5: Explain below behavior with the above buttons
+      <h3>
+        Test i tag with button<i
+          [hidden]="!getListing()"
+          class="btn btn-primary"
+        ></i>
+      </h3>
+      <button class="btn btn-primary" (click)="setHidenProperty()">
+        Click to Unhide the Test Button one
+      </button>
+    </div>
+  </div>
+</div>
